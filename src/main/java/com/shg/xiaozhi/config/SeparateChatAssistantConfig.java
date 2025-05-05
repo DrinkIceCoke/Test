@@ -18,6 +18,7 @@ public class SeparateChatAssistantConfig {
     @Bean
     public ChatMemoryProvider chatMemoryProvider() {
 
+
         return MemoryId -> MessageWindowChatMemory.builder()
                 .id(MemoryId)
                 .chatMemoryStore(customChatMessageStore)
